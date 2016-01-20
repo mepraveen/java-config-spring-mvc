@@ -1,0 +1,58 @@
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+apply plugin: 'maven'
+
+webAppDirName = 'WebContent'
+
+repositories {
+	mavenLocal ()
+	mavenCentral()
+}
+
+dependencies {
+	
+	compile 'org.hibernate:hibernate-core:4.2.1.Final'
+	compile 'javax.validation:validation-api:1.0.0.GA'
+	compile 'org.hibernate:hibernate-validator:4.3.0.Final'
+	compile 'org.hibernate:hibernate-entitymanager:4.2.1.Final'
+	compile 'mysql:mysql-connector-java:5.1.25'
+	compile 'org.springframework:spring-webmvc:4.1.2.RELEASE'
+	compile 'org.springframework.data:spring-data-jpa:1.7.1.RELEASE'
+	compile 'javax.servlet:javax.servlet-api:3.0.1'
+	compile 'jstl:jstl:1.2'
+	compile 'javax.servlet.jsp:jsp-api:2.1'
+	compile 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1'
+	compile 'taglibs:standard:1.1.2'
+	
+	compile 'org.slf4j:slf4j-api:1.7.7'
+    compile 'ch.qos.logback:logback-classic:1.1.2'
+    compile 'com.googlecode.log4jdbc:log4jdbc:1.2'
+    
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.4.4'
+	compile 'com.fasterxml.jackson.core:jackson-core:2.4.4'
+	compile 'com.fasterxml.jackson.core:jackson-annotations:2.4.4'
+	
+	compile 'org.springframework.security:spring-security-web:3.2.6.RELEASE'
+	compile 'org.springframework.security:spring-security-config:3.2.6.RELEASE'
+	
+	compile 'javax.mail:mail:1.4.7'
+	compile 'org.apache.velocity:velocity:1.7'
+	compile 'commons-dbcp:commons-dbcp:1.4'
+	compile 'jaf:activation:1.0.2'
+	compile 'commons-httpclient:commons-httpclient:3.1'
+	compile 'org.springframework:spring-context-support:4.1.2.RELEASE'
+	
+	
+    
+ 
+	
+}
+
+
+
+war {
+    from 'WebContent' // adds a file-set to the root of the archive
+}
+
+  //  compile 'ch.qos.logback:logback-classic:1.1.2' this is for configuration of log

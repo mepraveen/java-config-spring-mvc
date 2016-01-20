@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<body>
+<div style="border-radius:5px; border:1px solid #ccc; background-color:#F6F6F6; margin:0 auto 10px; max-width:960px; font-size:12px;">
+		<p style="color:#55AAC3; text-align: center; font-size:14px; font-weight:bold;"><u>${subject}</u></p>
+		<p style="padding:3px 10px; font-weight:bold;">Dear ${receiver},</p>
+		<div style="margin:5px; padding:10px;font-size:12px;">
+</div>
+
+<p>
+${message}
+</p>
+			<p style="padding-left: 10px; font-size:14px; font-weight:bold;">Thank you,<br/>
+			<p style="padding:3px 10px; background-color:#55AAC3; color:#FFF; margin-top:10px; text-align:center;">Please do not reply to this email address.</p>
+			</div>
+			<div style="clear:both;"></div>
+	</body>
+</html>
